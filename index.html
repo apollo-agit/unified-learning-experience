@@ -307,33 +307,7 @@
     }
     </style>
 
-    <style>
-    #footer {
-        background-color: #424242;
-        height: 450px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 1rem;
-        text-align: center;
-        z-index: -50;
-        color: white;
-    }
-    
-    #footer p {
-        margin-top: 250px;
-    }
-    
-    .logo {
-        text-align: left;
-        margin: 15px;
-    }
-    
-    .logo img {
-        height: 100px;
-    }
-    </style>
+
 
     <style>
     .bounce-animation {
@@ -584,7 +558,8 @@
 
     <style>
     .jumbotron {
-      top: -10%;
+        position: absolute;
+        top: 200px;
         height: 300px;
         width: 100%;
         background: url('images/education.jpg') no-repeat center center;
@@ -595,14 +570,53 @@
         max-width: 100%;
         max-height: 100%;
     }
-
+    
     #landing.hide {
-      display: none;
+        display: none;
     }
     </style>
 
+    <style>
+    #footer {
+        background-color: #424242;
+        height: 450px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 1rem;
+        text-align: left;
+        z-index: -50;
+        color: white;
+    }
+    
+    #footer p {
+        margin-top: 150px;
+    }
+    
+    .designed {
+        float: right;
+        margin: 15px;
+        width: 40%;
+    }
 
-    1 </head>
+    .designed img {
+      height: 150px;
+    }
+    
+    .logo {
+        text-align: left;
+        float: left;
+        margin: 15px;
+        width: 40%;
+    }
+    
+    .logo img {
+        height: 100px;
+    }
+    </style>
+
+</head>
 
 <body>
 
@@ -614,12 +628,16 @@
             </a>
         </div>
 
-    <div class="jumbotron">    
+        <div class="designed">
+            <img src="images/rocket-surgery.png" alt="">
+        </div>
+
+        <div class="jumbotron">
+        </div>
+
+
+
     </div>
-
-    
-
-</div>
 
 
     <div class="startbutton scale-control bounce-animation">
@@ -631,12 +649,13 @@
 
         <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima esse nobis reprehenderit tempore id. Nesciunt repellendus quam, magnam illum blanditiis reprehenderit rerum ipsum debitis necessitatibus totam nulla voluptate maxime et.</span><span>Fuga commodi deserunt, doloremque officiis facere at, vel vero blanditiis. Quibusdam alias, suscipit nobis corrupti a ullam incidunt harum eum doloribus consequuntur aspernatur eveniet laborum quaerat. Provident voluptate quidem nesciunt.</span></p>
 
+
+
     </div>
 
 
 
-  
-  <div id="app" class="app hide scale-control">
+    <div id="app" class="app hide scale-control">
         <div id="spinner"></div>
     </div>
 
@@ -668,7 +687,7 @@
                 var appDiv = document.querySelector("#app");
                 var landing = document.querySelector("#landing");
                 appDiv.className = "app show";
-                landing.className="hide";
+                landing.className = "hide";
             }
 
             , false);
