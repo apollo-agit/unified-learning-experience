@@ -582,16 +582,45 @@
     }
     </style>
 
+    <style>
+    .jumbotron {
+      top: -10%;
+        height: 300px;
+        width: 100%;
+        background: url('images/education.jpg') no-repeat center center;
+        background-size: 100% 100%;
+    }
+    
+    .jumbotron img {
+        max-width: 100%;
+        max-height: 100%;
+    }
 
-1 </head>
+    #landing.hide {
+      display: none;
+    }
+    </style>
+
+
+    1 </head>
 
 <body>
 
-    <div class="logo">
-        <a href="#">
-            <img src="images/apollo-u-funky-a.png" alt="">
-        </a>
+    <div id="landing">
+
+        <div class="logo">
+            <a href="#">
+                <img src="images/apollo-u-logo.png" alt="">
+            </a>
+        </div>
+
+    <div class="jumbotron">    
     </div>
+
+    
+
+</div>
+
 
     <div class="startbutton scale-control bounce-animation">
     </div>
@@ -606,7 +635,8 @@
 
 
 
-    <div id="app" class="app hide scale-control">
+  
+  <div id="app" class="app hide scale-control">
         <div id="spinner"></div>
     </div>
 
@@ -636,7 +666,9 @@
         floatButton.addEventListener('transitionend', function() {
                 //floatButton.className = 'scale-control hide';
                 var appDiv = document.querySelector("#app");
+                var landing = document.querySelector("#landing");
                 appDiv.className = "app show";
+                landing.className="hide";
             }
 
             , false);
