@@ -43,19 +43,7 @@
 
     <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
     <link rel="import" href="src/my-app.html">
-    <style>
-    body {
-        margin: 0;
-        font-family: 'Roboto', 'Noto', sans-serif;
-        line-height: 1.5;
-        min-height: 100vh;
-        background-color: #022B9A;
-        overflow: hidden;
-        text-align: center;
-        height: 325px;
-        max-height: 325px;
-    }
-    </style>
+
 
     <style>
     #spinner {
@@ -66,7 +54,7 @@
         backface-visibility: hidden;
         opacity: 0.7;
         position: relative;
-        top: 50%;
+        top: 30%;
         left: 50%;
         margin-top: -50px;
         margin-left: -50px;
@@ -74,8 +62,8 @@
         width: 100px;
         background: none;
         border-radius: 100px;
-        border-top: 15px solid #FF4001;
-        border-bottom: 15px solid #FF4001;
+        border-top: 15px solid #F7931E;
+        border-bottom: 15px solid #F7931E;
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         -webkit-animation: spin 10s infinite alternate linear, glow 5s infinite alternate linear;
@@ -97,7 +85,7 @@
         left: -30px;
         z-index: -1;
         border-radius: 115px;
-        border: 15px solid #FF4001;
+        border: 15px solid #F7931E;
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
         -webkit-animation: spin2 5s infinite alternate linear, glow 3s infinite alternate linear;
@@ -119,7 +107,7 @@
         left: -45px;
         z-index: -2;
         border-radius: 130px;
-        border: 15px solid #FF4001;
+        border: 15px solid #F7931E;
         border-left: 15px solid transparent;
         border-bottom: 15px solid transparent;
         -webkit-animation: spin 2s infinite alternate ease both, glow 10s infinite alternate linear;
@@ -257,8 +245,8 @@
             box-shadow: none;
         }
         50% {
-            -webkit-box-shadow: 10px -10px 30px #FF4001, -10px 10px 30px #FF4001;
-            box-shadow: 10px -10px 30px #FF4001, -10px 10px 30px #FF4001;
+            -webkit-box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E;
+            box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E;
         }
         100% {
             -webkit-box-shadow: none;
@@ -271,7 +259,7 @@
             box-shadow: none;
         }
         50% {
-            box-shadow: 10px -10px 30px #FF4001, -10px 10px 30px #FF4001, inset 10px -10px 30px #FF4001, inset -10px 10px 30px #FF4001;
+            box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E, inset 10px -10px 30px #F7931E, inset -10px 10px 30px #F7931E;
         }
         100% {
             box-shadow: none;
@@ -284,8 +272,8 @@
             box-shadow: none;
         }
         50% {
-            -webkit-box-shadow: 10px -10px 30px #FF4001, -10px 10px 30px #FF4001, inset 10px -10px 30px #FF4001, inset -10px 10px 30px #FF4001;
-            box-shadow: 10px -10px 30px #FF4001, -10px 10px 30px #FF4001, inset 10px -10px 30px #FF4001, inset -10px 10px 30px #FF4001;
+            -webkit-box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E, inset 10px -10px 30px #F7931E, inset -10px 10px 30px #F7931E;
+            box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E, inset 10px -10px 30px #F7931E, inset -10px 10px 30px #F7931E;
         }
         100% {
             -webkit-box-shadow: none;
@@ -298,7 +286,7 @@
             box-shadow: none;
         }
         50% {
-            box-shadow: 10px -10px 30px #FF4001, -10px 10px 30px #FF4001, inset 10px -10px 30px #FF4001, inset -10px 10px 30px #FF4001;
+            box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E, inset 10px -10px 30px #F7931E, inset -10px 10px 30px #F7931E;
         }
         100% {
             box-shadow: none;
@@ -310,7 +298,7 @@
             box-shadow: none;
         }
         50% {
-            box-shadow: 10px -10px 30px #FF4001, -10px 10px 30px #FF4001, inset 10px -10px 30px #FF4001, inset -10px 10px 30px #FF4001;
+            box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E, inset 10px -10px 30px #F7931E, inset -10px 10px 30px #F7931E;
         }
         100% {
             box-shadow: none;
@@ -320,14 +308,43 @@
 
     <style>
     #footer {
-        background-color: #182A4B;
-        height: 200px;
+        background-color: #424242;
+        height: 450px;
         position: absolute;
         right: 0;
         bottom: 0;
         left: 0;
         padding: 1rem;
         text-align: center;
+        z-index: -50;
+        color: white;
+    }
+
+    #footer p {
+      margin-top: 250px;
+    }
+    
+    .logo {
+        text-align: left;
+        margin: 15px;
+    }
+    
+    .logo img {
+        height: 100px;
+    }
+    </style>
+
+    <style>
+    body {
+        margin: 0;
+        font-family: 'Roboto', 'Noto', sans-serif;
+        line-height: 1.5;
+        min-height: 100vh;
+        background-color: #EEEEEE;
+        overflow: hidden;
+        text-align: center;
+        height: 325px;
+        max-height: 325px;
     }
     </style>
 
@@ -335,11 +352,17 @@
 
 <body>
 
+    <div class="logo">
+        <img src="images/apollo-u-funky-a.png" alt="">
+    </div>
 
+    
 
-    <div id="spinner"></div>
+    <div id="footer">
 
-    <div id="footer"></div>
+      <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima esse nobis reprehenderit tempore id. Nesciunt repellendus quam, magnam illum blanditiis reprehenderit rerum ipsum debitis necessitatibus totam nulla voluptate maxime et.</span><span>Fuga commodi deserunt, doloremque officiis facere at, vel vero blanditiis. Quibusdam alias, suscipit nobis corrupti a ullam incidunt harum eum doloribus consequuntur aspernatur eveniet laborum quaerat. Provident voluptate quidem nesciunt.</span></p>
+
+    </div>
 
 
     <noscript>
