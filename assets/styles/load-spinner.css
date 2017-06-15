@@ -16,8 +16,8 @@
         width: 100px;
         background: none;
         border-radius: 100px;
-        border-top: 15px solid #F7931E;
-        border-bottom: 15px solid #F7931E;
+        border-top: 15px solid var(--spinner-color);
+        border-bottom: 15px solid var(--spinner-color);
         border-left: 15px solid transparent;
         border-right: 15px solid transparent;
         -webkit-animation: spin 10s infinite alternate linear, glow 5s infinite alternate linear;
@@ -39,7 +39,7 @@
         left: -30px;
         z-index: -1;
         border-radius: 115px;
-        border: 15px solid #F7931E;
+        border: 15px solid var(--spinner-color);
         border-top: 15px solid transparent;
         border-bottom: 15px solid transparent;
         -webkit-animation: spin2 5s infinite alternate linear, glow 3s infinite alternate linear;
@@ -61,7 +61,7 @@
         left: -45px;
         z-index: -2;
         border-radius: 130px;
-        border: 15px solid #F7931E;
+        border: 15px solid var(--spinner-color);
         border-left: 15px solid transparent;
         border-bottom: 15px solid transparent;
         -webkit-animation: spin 2s infinite alternate ease both, glow 10s infinite alternate linear;
@@ -199,8 +199,8 @@
             box-shadow: none;
         }
         50% {
-            -webkit-box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E;
-            box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E;
+            -webkit-box-shadow: 10px -10px 30px var(--spinner-color), -10px 10px 30px var(--spinner-color);
+            box-shadow: 10px -10px 30px var(--spinner-color), -10px 10px 30px var(--spinner-color);
         }
         100% {
             -webkit-box-shadow: none;
@@ -213,7 +213,7 @@
             box-shadow: none;
         }
         50% {
-            box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E, inset 10px -10px 30px #F7931E, inset -10px 10px 30px #F7931E;
+            box-shadow: 10px -10px 30px var(--spinner-color), -10px 10px 30px var(--spinner-color), inset 10px -10px 30px var(--spinner-color), inset -10px 10px 30px var(--spinner-color);
         }
         100% {
             box-shadow: none;
@@ -226,8 +226,8 @@
             box-shadow: none;
         }
         50% {
-            -webkit-box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E, inset 10px -10px 30px #F7931E, inset -10px 10px 30px #F7931E;
-            box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E, inset 10px -10px 30px #F7931E, inset -10px 10px 30px #F7931E;
+            -webkit-box-shadow: 10px -10px 30px var(--spinner-color), -10px 10px 30px var(--spinner-color), inset 10px -10px 30px var(--spinner-color), inset -10px 10px 30px var(--spinner-color);
+            box-shadow: 10px -10px 30px var(--spinner-color), -10px 10px 30px var(--spinner-color), inset 10px -10px 30px var(--spinner-color), inset -10px 10px 30px var(--spinner-color);
         }
         100% {
             -webkit-box-shadow: none;
@@ -240,7 +240,7 @@
             box-shadow: none;
         }
         50% {
-            box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E, inset 10px -10px 30px #F7931E, inset -10px 10px 30px #F7931E;
+            box-shadow: 10px -10px 30px var(--spinner-color), -10px 10px 30px var(--spinner-color), inset 10px -10px 30px var(--spinner-color), inset -10px 10px 30px var(--spinner-color);
         }
         100% {
             box-shadow: none;
@@ -252,10 +252,55 @@
             box-shadow: none;
         }
         50% {
-            box-shadow: 10px -10px 30px #F7931E, -10px 10px 30px #F7931E, inset 10px -10px 30px #F7931E, inset -10px 10px 30px #F7931E;
+            box-shadow: 10px -10px 30px var(--spinner-color), -10px 10px 30px var(--spinner-color), inset 10px -10px 30px var(--spinner-color), inset -10px 10px 30px var(--spinner-color);
         }
         100% {
             box-shadow: none;
+        }
+    }
+
+    .scale-control {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        transform: scale(0.1);
+        transition: 0.5s ease-in;
+        z-index: 2;
+    }
+    
+    .scale-control.large {
+        transform: scale(10);
+        right: 0;
+        bottom: 0;
+        box-shadow: none;
+        background-color: var(--loading-bg-color);
+        background-image: none;
+        z-index: 2;
+    }
+    
+    .scale-control.hide {
+        visibility: hidden;
+    }
+    
+    .loading.show {
+        position: absolute;
+        background-color: var(--loading-bg-color);
+        height: 100%;
+        width: 100%;
+        pointer-events: none;
+        visibility: show;
+        z-index: 2;
+    }
+    
+
+    @keyframes scale-control-animation {
+        80% {
+            border-radius: 1000px;
+        }
+        100% {
+            border-radius: 1000%/500% 0 0 0;
+            width: 100%;
+            height: 100%;
         }
     }
 

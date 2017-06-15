@@ -14,7 +14,7 @@
     <link rel="manifest" href="manifest.json">
 
     <!-- This is the toolbar color match for chrome, firerox, etc... -->
-    <meta name="theme-color" content="#3f51b5">
+    <meta name="theme-color" content="#2E3192">
 
     <!-- Add to homescreen for each kind of browser -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -42,97 +42,32 @@
     </script>
 
     <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+
     <link rel="stylesheet" type="text/css" href="assets/styles/global-variables.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/load-spinner.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/bouncy-animation.css">
+
     <link rel="import" href="src/my-app.html">
 
     <style>
     html,
     body {
+        line-height: 0px;
         margin: 0;
         font-family: 'Roboto', 'Noto', sans-serif;
         line-height: 1.5;
         min-height: 100vh;
-        background-color: #EEEEEE;
+        background-color: var(--base-color);
         overflow: hidden;
         text-align: center;
         height: 325px;
         max-height: 325px;
     }
     
-    .app.show {
-        background-color: blue;
-        height: 100%;
-        width: 100%;
-        pointer-events: none;
-        visibility: show;
-        z-index: 2;
-    }
-    
-    .app.show {
-        visibility: show;
-    }
-    
-    .app.hide {
-        visibility: hidden;
-    }
-    
-    body.mode-search {
-        overflow: hidden;
-    }
-    
-    body.mode-search .app,
-    body.mode-search {
-        opacity: 1;
-        transform: none;
-        pointer-events: all;
-    }
-    
-    body.mode-search .startbutton {
-        opacity: 0;
-    }
-    </style>
-
-    <style>
-    .scale-control {
-        position: absolute;
-        width: 500px;
-        height: 500px;
-        transform: scale(0.1);
-        transition: 0.5s ease-in;
-        z-index: 2;
-    }
-    
-    .scale-control.large {
-        transform: scale(10);
-        right: 0;
-        bottom: 0;
-        box-shadow: none;
-        background-color: blue;
-        background-image: none;
-        z-index: 2;
-    }
-    
-    .scale-control.hide {
-        visibility: hidden;
-    }
-    
-    @keyframes scale-control-animation {
-        80% {
-            border-radius: 1000px;
-        }
-        100% {
-            border-radius: 1000%/500% 0 0 0;
-            width: 100%;
-            height: 100%;
-        }
-    }
-    
     .startbutton {
         z-index: 1;
         position: absolute;
-        background-color: blue;
+        background-color: var(--loading-bg-color);
         bottom: 5%;
         right: 5%;
         height: 100px;
@@ -147,12 +82,36 @@
     .startbutton img {
         height: 75%;
     }
-    </style>
-
-    <style>
+    
+    .loading.show {
+        visibility: show;
+    }
+    
+    .loading.hide {
+        visibility: hidden;
+    }
+    
+    body.mode-search {
+        overflow: hidden;
+    }
+    
+    body.mode-search .loading,
+    body.mode-search {
+        opacity: 1;
+        transform: none;
+        pointer-events: all;
+    }
+    
+    body.mode-search .startbutton {
+        opacity: 0;
+    }
+    
+    .spacer {
+        background-color: var(--spacer-bg-color);
+        height: 100px;
+    }
+    
     .jumbotron {
-        position: absolute;
-        top: 200px;
         height: 300px;
         width: 100%;
         background-color: var(--jumbotron-bg-color);
@@ -160,49 +119,40 @@
         color: var(--site-white);
     }
     
-
+    #landing {
+        height: 100%;
+    }
     
     #landing.hide {
         display: none;
     }
-    </style>
-
-    <style>
+    
     #footer {
         background-color: var(--footer-bg-color);
-        height: 450px;
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 1rem;
-        text-align: left;
+        height: 100%;
+        text-align: center;
         color: var(--site-white);
     }
     
     #footer p {
-        margin-top: 150px;
-    }
-    
-    .designed {
-        float: right;
-        margin: 15px;
-        width: 40%;
-    }
-    
-    .designed img {
-        height: 150px;
+        margin: 50px;
     }
     
     .logo {
         text-align: left;
-        float: left;
         margin: 15px;
         width: 40%;
     }
     
     .logo img {
         height: 100px;
+    }
+    
+    .spacer {
+        background: #fff;
+        padding: 20px 0;
+        box-shadow: 0 2px 1px rgba(200, 215, 231, .5);
+        position: relative;
     }
     </style>
 
@@ -211,7 +161,6 @@
 <body>
 
     <div id="landing">
-
         <div class="logo">
             <a href="#">
                 <img src="assets/images/apollo-u-logo.png" alt="">
@@ -222,25 +171,20 @@
 
         <div class="jumbotron">
             <h2>Project Rocket Surgery</h2>
-     
-                <img src="assets/images/rocket-surgery.png" alt="">
-
+            <img src="assets/images/rocket-surgery.png" alt="">
         </div>
+<div class="spacer"></div>
+        <div id="footer"></div>
     </div>
 
-
-
-    <div class="startbutton scale-control bounce-animation">
+    <div class="startbutton bounce-animation">
     </div>
 
-    <div id="footer">
-
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima esse nobis reprehenderit tempore id. Nesciunt repellendus quam, magnam illum blanditiis reprehenderit rerum ipsum debitis necessitatibus totam nulla voluptate maxime et.</span><span>Fuga commodi deserunt, doloremque officiis facere at, vel vero blanditiis. Quibusdam alias, suscipit nobis corrupti a ullam incidunt harum eum doloribus consequuntur aspernatur eveniet laborum quaerat. Provident voluptate quidem nesciunt.</span></p>
-    </div>
-
-    <div id="app" class="app hide scale-control">
+    <div id="loading" class="loading hide scale-control">
         <div id="spinner"></div>
     </div>
+
+
 
     <noscript>
         Please enable JavaScript to view this website.
@@ -248,26 +192,27 @@
 
     <script>
     window.onload = function() {
-        var floatButton = document.querySelector(".scale-control");
+        var floatButton = document.querySelector(".startbutton");
 
         floatButton.onclick = function() {
             if (floatButton.className.indexOf("large") != -1) {
-                floatButton.className = "scale-control";
+                floatButton.className = "startbutton bounce-animation";
                 return;
             }
             floatButton.className = "scale-control large";
         };
 
         floatButton.addEventListener('transitionend', function() {
-                var appDiv = document.querySelector("#app");
+                var loadingDiv = document.querySelector("#loading");
                 var landing = document.querySelector("#landing");
-                appDiv.className = "app show";
+                loadingDiv.className = "loading show";
                 landing.className = "hide";
             }
 
             , false);
     };
     </script>
+
 </body>
 
 </html>

@@ -1,5 +1,17 @@
 :root {
+
+	--primary-color: #2E3192;
+	--secondary-color: #F7931E;
+	--site-white: #E7DFDD; 
+
+	--base-color: var(--site-white);
+
+	--header-bg-color: var(--site-white);
 	--footer-bg-color: #0E0B16;
-	--jumbotron-bg-color: #4717F6;
-	--site-white: #E7DFDD;
+	--jumbotron-bg-color: #A239CA;
+	--loading-bg-color: #4717F6;
+	--spacer-bg-color: white;
+
+	--spinner-color: #ff7b24;
+
 }
