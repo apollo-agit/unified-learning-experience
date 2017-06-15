@@ -1,0 +1,4 @@
+@keyframes slide {
+    from { left: -150%; }
+    to { left: 50%; }
+}
