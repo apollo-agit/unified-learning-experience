@@ -112,7 +112,7 @@
     }
     
     .jumbotron {
-        height: 300px;
+        height: 500px;
         width: 100%;
         background-color: var(--jumbotron-bg-color);
         z-index: 1;
@@ -138,21 +138,19 @@
         margin: 50px;
     }
     
-    .logo {
-        text-align: left;
+    .rocket img {
+        float: right;
+        height: 150px;
         margin: 15px;
-        width: 40%;
+    }
+    
+    .logo {
+        float: left;
+        margin: 15px;
     }
     
     .logo img {
         height: 100px;
-    }
-    
-    .spacer {
-        background: #fff;
-        padding: 20px 0;
-        box-shadow: 0 2px 1px rgba(200, 215, 231, .5);
-        position: relative;
     }
     </style>
 
@@ -165,16 +163,22 @@
             <a href="#">
                 <img src="assets/images/apollo-u-logo.png" alt="">
             </a>
+
         </div>
 
-
+        <div class="rocket">
+            <img src="assets/images/rocket-surgery.png" alt="">
+        </div>
 
         <div class="jumbotron">
             <h2>Project Rocket Surgery</h2>
-            <img src="assets/images/rocket-surgery.png" alt="">
+
         </div>
-<div class="spacer"></div>
-        <div id="footer"></div>
+
+        <div id="footer">
+
+        </div>
+
     </div>
 
     <div class="startbutton bounce-animation">
