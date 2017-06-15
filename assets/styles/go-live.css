@@ -1,0 +1,443 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+div.golive.top {
+  border-radius: 50%;
+  color: var(--footer-bg-color);
+  height: 340px;
+  left: 50%;
+  position: absolute;
+  top: 30%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 340px;
+}
+
+div.golive.bottom {
+  border-radius: 50%;
+  color: var(--jumbotron-bg-color);
+  height: 340px;
+  left: 50%;
+  position: absolute;
+  top: 70%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  width: 340px;
+}
+
+
+div.golive  h1, div h2 {
+  height: 150px;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  width: 340px;
+}
+div.golive  h1 span, div h2 span {
+  display: inline-block;
+  left: calc(50% - .5em);
+  height: 140px;
+  line-height: 40px;
+  opacity: 0;
+  padding: 100px 0 0;
+  position: absolute;
+  text-align: center;
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+  width: 1em;
+}
+div.golive  h1 span:nth-child(1), div h2 span:nth-child(1) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-transform: rotate(-62deg) translateY(-20px);
+          transform: rotate(-62deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(2), div h2 span:nth-child(2) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-transform: rotate(-50deg) translateY(-20px);
+          transform: rotate(-50deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(3), div h2 span:nth-child(3) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-transform: rotate(-38deg) translateY(-20px);
+          transform: rotate(-38deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(4), div h2 span:nth-child(4) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-transform: rotate(-26deg) translateY(-20px);
+          transform: rotate(-26deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(5), div h2 span:nth-child(5) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-transform: rotate(-14deg) translateY(-20px);
+          transform: rotate(-14deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(6), div h2 span:nth-child(6) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-transform: rotate(-2deg) translateY(-20px);
+          transform: rotate(-2deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(7), div h2 span:nth-child(7) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-transform: rotate(10deg) translateY(-20px);
+          transform: rotate(10deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(8), div h2 span:nth-child(8) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-transform: rotate(22deg) translateY(-20px);
+          transform: rotate(22deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(9), div h2 span:nth-child(9) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-transform: rotate(34deg) translateY(-20px);
+          transform: rotate(34deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(10), div h2 span:nth-child(10) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-transform: rotate(46deg) translateY(-20px);
+          transform: rotate(46deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(11), div h2 span:nth-child(11) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-transform: rotate(58deg) translateY(-20px);
+          transform: rotate(58deg) translateY(-20px);
+}
+div.golive  h1 span:nth-child(12), div h2 span:nth-child(12) {
+  -webkit-animation: slideUp .4s ease-out forwards;
+          animation: slideUp .4s ease-out forwards;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
+  -webkit-transform: rotate(70deg) translateY(-20px);
+          transform: rotate(70deg) translateY(-20px);
+}
+div.golive  h1 {
+  top: 26px;
+}
+div.golive  h2 {
+  bottom: 21px;
+}
+div.golive  h2 span {
+  padding: 0 0 100px;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+}
+div.golive  h2 span:nth-child(1) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 4.55s;
+          animation-delay: 4.55s;
+  -webkit-transform: rotate(65deg) translateY(20px);
+          transform: rotate(65deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(2) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 4.6s;
+          animation-delay: 4.6s;
+  -webkit-transform: rotate(56.75deg) translateY(20px);
+          transform: rotate(56.75deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(3) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 4.65s;
+          animation-delay: 4.65s;
+  -webkit-transform: rotate(48.5deg) translateY(20px);
+          transform: rotate(48.5deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(4) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 4.7s;
+          animation-delay: 4.7s;
+  -webkit-transform: rotate(40.25deg) translateY(20px);
+          transform: rotate(40.25deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(5) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 4.75s;
+          animation-delay: 4.75s;
+  -webkit-transform: rotate(32deg) translateY(20px);
+          transform: rotate(32deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(6) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 4.8s;
+          animation-delay: 4.8s;
+  -webkit-transform: rotate(23.75deg) translateY(20px);
+          transform: rotate(23.75deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(7) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 4.85s;
+          animation-delay: 4.85s;
+  -webkit-transform: rotate(15.5deg) translateY(20px);
+          transform: rotate(15.5deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(8) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 4.9s;
+          animation-delay: 4.9s;
+  -webkit-transform: rotate(7.25deg) translateY(20px);
+          transform: rotate(7.25deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(9) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 4.95s;
+          animation-delay: 4.95s;
+  -webkit-transform: rotate(-1deg) translateY(20px);
+          transform: rotate(-1deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(10) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-transform: rotate(-9.25deg) translateY(20px);
+          transform: rotate(-9.25deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(11) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 5.05s;
+          animation-delay: 5.05s;
+  -webkit-transform: rotate(-17.5deg) translateY(20px);
+          transform: rotate(-17.5deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(12) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 5.1s;
+          animation-delay: 5.1s;
+  -webkit-transform: rotate(-25.75deg) translateY(20px);
+          transform: rotate(-25.75deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(13) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 5.15s;
+          animation-delay: 5.15s;
+  -webkit-transform: rotate(-34deg) translateY(20px);
+          transform: rotate(-34deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(14) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 5.2s;
+          animation-delay: 5.2s;
+  -webkit-transform: rotate(-42.25deg) translateY(20px);
+          transform: rotate(-42.25deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(15) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 5.25s;
+          animation-delay: 5.25s;
+  -webkit-transform: rotate(-50.5deg) translateY(20px);
+          transform: rotate(-50.5deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(16) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 5.3s;
+          animation-delay: 5.3s;
+  -webkit-transform: rotate(-58.75deg) translateY(20px);
+          transform: rotate(-58.75deg) translateY(20px);
+}
+div.golive  h2 span:nth-child(17) {
+  -webkit-animation: slideDown .5s ease-out forwards;
+          animation: slideDown .5s ease-out forwards;
+  -webkit-animation-delay: 5.35s;
+          animation-delay: 5.35s;
+  -webkit-transform: rotate(-67deg) translateY(20px);
+          transform: rotate(-67deg) translateY(20px);
+}
+div.golive  h4 {
+  -webkit-animation: fade .6s ease-in 6s forwards;
+          animation: fade .6s ease-in 6s forwards;
+  bottom: -60px;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+}
+
+@-webkit-keyframes popInImage {
+  /*from {
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+  }*/
+  0% {
+    box-shadow: 0 0 0 2px white, 0 0 0 0px darkviolet;
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+  5% {
+    box-shadow: 0 0 0 2px white, 0 0 0 0px darkviolet;
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+  }
+  90% {
+    box-shadow: 0 0 0 2px white, 0 0 0 0px darkviolet;
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+  }
+  96% {
+    box-shadow: 0 0 0 2px white, 0 0 0 22px darkviolet;
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+  }
+  100% {
+    box-shadow: 0 0 0 2px white, 0 0 0 18px darkviolet;
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+  }
+}
+
+@keyframes popInImage {
+  /*from {
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+  to {
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+  }*/
+  0% {
+    box-shadow: 0 0 0 2px white, 0 0 0 0px darkviolet;
+    height: 0;
+    opacity: 0;
+    width: 0;
+  }
+  5% {
+    box-shadow: 0 0 0 2px white, 0 0 0 0px darkviolet;
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+  }
+  90% {
+    box-shadow: 0 0 0 2px white, 0 0 0 0px darkviolet;
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+  }
+  96% {
+    box-shadow: 0 0 0 2px white, 0 0 0 22px darkviolet;
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+  }
+  100% {
+    box-shadow: 0 0 0 2px white, 0 0 0 18px darkviolet;
+    height: 200px;
+    opacity: 1;
+    width: 200px;
+  }
+}
+@-webkit-keyframes slideUp {
+  from {
+    padding: 100px 0 0;
+    opacity: 0;
+  }
+  to {
+    padding: 0 0 100px;
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  from {
+    padding: 100px 0 0;
+    opacity: 0;
+  }
+  to {
+    padding: 0 0 100px;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideDown {
+  from {
+    padding: 0 0 100px;
+    opacity: 0;
+  }
+  to {
+    padding: 100px 0 0;
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  from {
+    padding: 0 0 100px;
+    opacity: 0;
+  }
+  to {
+    padding: 100px 0 0;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

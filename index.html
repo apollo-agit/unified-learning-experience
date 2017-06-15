@@ -42,10 +42,12 @@
     </script>
 
     <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="assets/styles/global-variables.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/load-spinner.css">
     <link rel="stylesheet" type="text/css" href="assets/styles/bouncy-animation.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/go-live.css">
 
     <link rel="import" href="src/my-app.html">
 
@@ -112,7 +114,7 @@
     }
     
     .jumbotron {
-        height: 500px;
+        height: 400px;
         width: 100%;
         background-color: var(--jumbotron-bg-color);
         z-index: 1;
@@ -152,6 +154,26 @@
     .logo img {
         height: 100px;
     }
+    
+    .project.top {
+        position: relative;
+        top: 80%;
+    }
+    
+    .project.bottom {
+        position: relative;
+        top: 7%;
+    }
+    
+    .project.bottom img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .message {
+     
+
+    }
     </style>
 
 </head>
@@ -171,13 +193,23 @@
         </div>
 
         <div class="jumbotron">
-            <h2>Project Rocket Surgery</h2>
-
+            <div class="project top">
+                <img src="assets/images/project-text.png" alt="">
+            </div>
         </div>
 
         <div id="footer">
-
+            <div class="project bottom">
+                <img src="assets/images/rocket-surgery-text.png" alt="">
+            </div>
         </div>
+
+        <div class="message">
+            <div class="golive top">
+                <h1>GO LIVE NOW!</h1>
+            </div>
+        </div>
+
 
     </div>
 
@@ -187,8 +219,6 @@
     <div id="loading" class="loading hide scale-control">
         <div id="spinner"></div>
     </div>
-
-
 
     <noscript>
         Please enable JavaScript to view this website.
@@ -215,6 +245,26 @@
 
             , false);
     };
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        var $h1 = $('h1').text().split(""),
+            $h2 = $('h2').text().split("");
+        $('h1').text("");
+        $('h2').text("");
+        makeSpans($h1, $('h1'));
+        makeSpans($h2, $('h2'));
+
+        function makeSpans($array, $obj) {
+            for (var i = 0; i < $array.length; i++) {
+                var $letter = $('<span></span>');
+                $letter.text($array[i]);
+                $obj.append($letter);
+            }
+        }
+
+    });
     </script>
 
 </body>
