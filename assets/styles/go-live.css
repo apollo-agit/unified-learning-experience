@@ -45,15 +45,8 @@ div.golive  h1 span, div h2 span {
           transform-origin: bottom center;
   width: 1em;
 }
+
 div.golive  h1 span:nth-child(1), div h2 span:nth-child(1) {
-  -webkit-animation: slideUp .4s ease-out forwards;
-          animation: slideUp .4s ease-out forwards;
-  -webkit-animation-delay: 2.5s;
-          animation-delay: 2.5s;
-  -webkit-transform: rotate(-62deg) translateY(-20px);
-          transform: rotate(-62deg) translateY(-20px);
-}
-div.golive  h1 span:nth-child(2), div h2 span:nth-child(2) {
   -webkit-animation: slideUp .4s ease-out forwards;
           animation: slideUp .4s ease-out forwards;
   -webkit-animation-delay: 2.5s;
@@ -61,7 +54,7 @@ div.golive  h1 span:nth-child(2), div h2 span:nth-child(2) {
   -webkit-transform: rotate(-50deg) translateY(-20px);
           transform: rotate(-50deg) translateY(-20px);
 }
-div.golive  h1 span:nth-child(3), div h2 span:nth-child(3) {
+div.golive  h1 span:nth-child(2), div h2 span:nth-child(2) {
   -webkit-animation: slideUp .4s ease-out forwards;
           animation: slideUp .4s ease-out forwards;
   -webkit-animation-delay: 2.5s;
@@ -69,23 +62,23 @@ div.golive  h1 span:nth-child(3), div h2 span:nth-child(3) {
   -webkit-transform: rotate(-38deg) translateY(-20px);
           transform: rotate(-38deg) translateY(-20px);
 }
-div.golive  h1 span:nth-child(4), div h2 span:nth-child(4) {
+div.golive  h1 span:nth-child(3), div h2 span:nth-child(3) {
   -webkit-animation: slideUp .4s ease-out forwards;
           animation: slideUp .4s ease-out forwards;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   -webkit-transform: rotate(-26deg) translateY(-20px);
           transform: rotate(-26deg) translateY(-20px);
 }
-div.golive  h1 span:nth-child(5), div h2 span:nth-child(5) {
+div.golive  h1 span:nth-child(4), div h2 span:nth-child(4) {
   -webkit-animation: slideUp .4s ease-out forwards;
           animation: slideUp .4s ease-out forwards;
-  -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
   -webkit-transform: rotate(-14deg) translateY(-20px);
           transform: rotate(-14deg) translateY(-20px);
 }
-div.golive  h1 span:nth-child(6), div h2 span:nth-child(6) {
+div.golive  h1 span:nth-child(5), div h2 span:nth-child(5) {
   -webkit-animation: slideUp .4s ease-out forwards;
           animation: slideUp .4s ease-out forwards;
   -webkit-animation-delay: 3.5s;
@@ -93,7 +86,7 @@ div.golive  h1 span:nth-child(6), div h2 span:nth-child(6) {
   -webkit-transform: rotate(-2deg) translateY(-20px);
           transform: rotate(-2deg) translateY(-20px);
 }
-div.golive  h1 span:nth-child(7), div h2 span:nth-child(7) {
+div.golive  h1 span:nth-child(6), div h2 span:nth-child(6) {
   -webkit-animation: slideUp .4s ease-out forwards;
           animation: slideUp .4s ease-out forwards;
   -webkit-animation-delay: 3.5s;
@@ -101,7 +94,7 @@ div.golive  h1 span:nth-child(7), div h2 span:nth-child(7) {
   -webkit-transform: rotate(10deg) translateY(-20px);
           transform: rotate(10deg) translateY(-20px);
 }
-div.golive  h1 span:nth-child(8), div h2 span:nth-child(8) {
+div.golive  h1 span:nth-child(7), div h2 span:nth-child(7) {
   -webkit-animation: slideUp .4s ease-out forwards;
           animation: slideUp .4s ease-out forwards;
   -webkit-animation-delay: 3.5s;
@@ -109,38 +102,23 @@ div.golive  h1 span:nth-child(8), div h2 span:nth-child(8) {
   -webkit-transform: rotate(22deg) translateY(-20px);
           transform: rotate(22deg) translateY(-20px);
 }
-div.golive  h1 span:nth-child(9), div h2 span:nth-child(9) {
+div.golive  h1 span:nth-child(8), div h2 span:nth-child(8) {
   -webkit-animation: slideUp .4s ease-out forwards;
           animation: slideUp .4s ease-out forwards;
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
   -webkit-transform: rotate(34deg) translateY(-20px);
           transform: rotate(34deg) translateY(-20px);
 }
-div.golive  h1 span:nth-child(10), div h2 span:nth-child(10) {
+div.golive  h1 span:nth-child(9), div h2 span:nth-child(9) {
   -webkit-animation: slideUp .4s ease-out forwards;
           animation: slideUp .4s ease-out forwards;
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
+  -webkit-animation-delay: 3.5s;
+          animation-delay: 3.5s;
   -webkit-transform: rotate(46deg) translateY(-20px);
           transform: rotate(46deg) translateY(-20px);
 }
-div.golive  h1 span:nth-child(11), div h2 span:nth-child(11) {
-  -webkit-animation: slideUp .4s ease-out forwards;
-          animation: slideUp .4s ease-out forwards;
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
-  -webkit-transform: rotate(58deg) translateY(-20px);
-          transform: rotate(58deg) translateY(-20px);
-}
-div.golive  h1 span:nth-child(12), div h2 span:nth-child(12) {
-  -webkit-animation: slideUp .4s ease-out forwards;
-          animation: slideUp .4s ease-out forwards;
-  -webkit-animation-delay: 4.5s;
-          animation-delay: 4.5s;
-  -webkit-transform: rotate(70deg) translateY(-20px);
-          transform: rotate(70deg) translateY(-20px);
-}
+
 div.golive  h1 {
   top: 26px;
 }
